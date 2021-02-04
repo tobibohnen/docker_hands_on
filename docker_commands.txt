@@ -1,0 +1,26 @@
+Build image:
+docker build -t <new_image_name> .
+
+Show all images
+docker images
+
+Docker run:
+docker run -d -p 5000:5000 testimage
+
+Show all container
+docker container ls -a
+
+Jump into container
+docker exec -it <container_id> bash
+
+DockerHub Login
+docker login --username=yourusername --email=youremail@company.com
+
+Tag an image referenced by ID
+To tag a local image with image_it into the username repository with imagename and version version_number:
+docker tag <image_id> username/imagename:version_number
+
+Push to DockerHub
+docker push username/imagename
+
+
